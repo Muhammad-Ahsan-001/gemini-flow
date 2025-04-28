@@ -12,7 +12,7 @@ import store from '../store'
 
 const App = () => {
   const apiUrl=store(s=>s.apiUrl)
-  console.log(apUrl)
+  console.log(apiUrl)
   return <Routes>
 
     <Route path='/' element={<LandingPage />} />

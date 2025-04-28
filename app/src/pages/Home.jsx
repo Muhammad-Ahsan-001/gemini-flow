@@ -82,7 +82,7 @@ const ChatFlow = () => {
                 <form className="input-area" onSubmit={handleSend}>
                     <input
                         type="text"
-                        placeholder="Send a message..."
+                        placeholder="Send a message... (like: Flowchart for learning python)"
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
                     />

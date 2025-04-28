@@ -77,7 +77,7 @@ export default function LandingPage() {
                     </div>
                     <div className="demo-text">
                         <p>
-                            Watch how you can instantly transform natural language prompts into fully editable flowcharts. This demo showcases how our tool uses the Gemini API to process input, convert it into structured JSON, and render a dynamic flowchart using React Flow — all in real-time.
+                            Watch how you can instantly transform natural language prompts into editable flowcharts. This demo showcases how our tool uses the Gemini API to process input, convert it into structured JSON, and render a dynamic flowchart using React Flow — all in real-time.
                         </p>
                     </div>
                 </div>
@@ -128,7 +128,7 @@ export default function LandingPage() {
                     </div>
                     <div className="icon-box">
                         <img src={wapn} alt="Phone" />
-                        <span>+92 31 77 88 00 59</span>
+                        <span>+92 317 7880059</span>
                     </div>
                 </div>
             </section>

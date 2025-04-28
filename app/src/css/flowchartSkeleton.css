@@ -1,0 +1,67 @@
+/* Container */
+.flowchart-skeleton-container {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Skeleton Nodes */
+.skeleton-node {
+    background-color: #2c2c54 !important;
+    /* Darker grey for dark background */
+    border-radius: 8px;
+}
+
+.root-node {
+    width: 250px;
+    height: 50px;
+}
+
+.child-node {
+    width: 150px;
+    height: 40px;
+}
+
+.grandchild-node {
+    width: 100px;
+    height: 30px;
+}
+
+/* Connector Lines */
+.connector-vertical {
+    width: 2px;
+    height: 30px;
+    background-color: #777;
+}
+
+.connector-vertical.small {
+    height: 20px;
+}
+
+.connector-horizontal {
+    width: 80px;
+    height: 2px;
+    background-color: #777;
+}
+
+/* Level Wrappers */
+.first-level {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.node-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.second-level {
+    display: flex;
+    gap: 20px;
+}

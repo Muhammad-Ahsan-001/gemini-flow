@@ -102,3 +102,16 @@
     cursor: pointer;
     transform: scale(1.05);
 }
+
+.logo-image {
+    position: fixed;
+    width: 250px;
+    height: 250px;
+    top: 25%;
+    left: 50%;
+    border: solid 2px;
+    border-radius: 50%;
+    border-color: #00ffe5;
+    box-shadow: 0 0 12px #00ffe5aa, 0 0 24px #00ffe588;
+    opacity: 30%;
+}

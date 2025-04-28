@@ -4,6 +4,7 @@ import axios from "axios";
 import Loading from "../components/Loading";
 import useStore from "../../store";
 import "../css/chatFlow.css";
+import logoimg from "../assets/logo.png";
 
 const ChatFlow = () => {
 
@@ -77,12 +78,16 @@ const ChatFlow = () => {
             <div className="chat-area">
                 <div className="messages">
                     {isLoading ? <Loading /> : ""}
+
+                    <div> <img src={logoimg} alt="logo of geminin flow" className="logo-image" /></div>
+
+
                 </div>
 
                 <form className="input-area" onSubmit={handleSend}>
                     <input
                         type="text"
-                        placeholder="Send a message... (like: Flowchart for learning python)"
+                        placeholder="Type an idea for your flowchart! (e.g., How to learn Python)"
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
                     />

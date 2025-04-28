@@ -7,8 +7,12 @@ import Home from './pages/Home.jsx'
 import LandingPage from './pages/LandingPage.jsx'
 import ShowFlowChart from './pages/showFlowChart.jsx'
 
+import store from '../store'
+
 
 const App = () => {
+  const apiUrl=store(s=>s.apiUrl)
+  console.log(apUrl)
   return <Routes>
 
     <Route path='/' element={<LandingPage />} />

@@ -1,20 +1,7 @@
-.button-containerflow {
-    background-color: #0e0e2c;
+.buttonflow a {
     position: fixed;
-    top: 2vh;
-    padding: 1rem 1rem;
-    left: vw;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    z-index: 100;
-    border-radius: 12px;
-    border-color: #a3c41f;
-    border: solid 2px;
-
-}
-
-.buttonflow {
+    top: 1vh;
+    left: 2vw;
     background-color: #007bff;
     color: white;
     padding: 10px 20px;
@@ -22,10 +9,11 @@
     border-radius: 8px;
     cursor: pointer;
     user-select: none;
-
+    z-index: 1000;
+    width: 200px
 }
 
-.buttonflow {
+.buttonflow a {
     text-decoration: none;
     border: 2px solid #00ffe5;
     border-radius: 10px;
@@ -36,7 +24,6 @@
     background: transparent;
     color: #00ffe5;
     font-weight: bold;
-    position: relative;
     overflow: hidden;
     transition: all 0.3s ease;
     margin-bottom: 3px;
@@ -52,7 +39,6 @@
     box-shadow:
         0 0 12px #00ffe5aa,
         0 0 24px #00ffe588;
-    cursor: pointer;
 }
 
 @keyframes neon-pulse {

@@ -1,5 +1,5 @@
 import { useEffect, useState, useCallback } from "react"
-import { useParams } from "react-router-dom"
+import { useParams, NavLink } from "react-router-dom"
 import axios from "axios"
 
 import '../css/flowchartButtons.css'
@@ -34,13 +34,11 @@ const ShowFlowChart = () => {
     return (
         flowChart.nodes?.length > 0 ?
             <>
-                <div className="button-containerflow">
-                    <div className="buttonflow" id="download-flowchart">
-                        Download Flowchart
-                    </div>
-                    <div className="buttonflow" id="new-flowchart">
+                <div className="buttonflow" id="new-flowchart">
+                    <NavLink to='/home'>
+
                         New Flowchart
-                    </div>
+                    </NavLink>
                 </div>
                 <FlowChart />
             </>

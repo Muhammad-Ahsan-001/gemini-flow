@@ -27,6 +27,12 @@ const Signup = () => {
         setTimeout(() => setError(""), 10000)
     }, [error])
 
+    useEffect(()=>{
+        if(localStorage.getItem("token")){
+           navigate("/home")
+        }
+    })
+
     //event handlers
     const handleChange = (e) => {
         const { name, value } = e.target;

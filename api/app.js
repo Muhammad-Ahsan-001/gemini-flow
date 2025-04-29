@@ -2,17 +2,10 @@
 const express = require('express');
 const cors = require('cors');
 const cp = require("cookie-parser");
-const http = require('http');
-const WebSocket = require('ws')
 require("dotenv").config();
 
 // Starting app and socket
 const app = express();
-const server = http.createServer(app);
-const { webSocket } = require('./controllers/openai')
-// WebSocket Server
-const wss = new WebSocket.Server({ server });
-
 
 // Functions
 const cnt = require("./db/connect");
@@ -25,7 +18,7 @@ const checkUser = require('./middleware/checkUser');
 
 // CORS for Express
 app.use(cors({
-    origin: ["http://localhost:5173", "https://gemini-flow-react-git-main-muhammad-ahsans-projects-789c2ac2.vercel.app"], 
+    origin: ["http://localhost:5173", "https://gemini-flow-react-git-main-muhammad-ahsans-projects-789c2ac2.vercel.app"],
     credentials: true,
     allowedHeaders: ['Content-Type', 'Authorization', 'x-csrf-token']
 }));
@@ -42,9 +35,6 @@ app.use('/', router);
 app.use('/login', loginRouter);
 app.use('/gemini', checkUser, chatRouter);
 
-// Handle WebSocket connections
-wss.on('connection', (ws, req) => webSocket(ws, req));
-
 // Function to start the API
 const run = async () => {
     // Connect to the database
@@ -52,7 +42,7 @@ const run = async () => {
 
     // Starting the app
     const port = process.env.PORT || 3000;
-    server.listen(port, '0.0.0.0', () => { // Changed to server.listen
+    app.listen(port, '0.0.0.0', () => {
         console.log(`Running on port ${port}`);
     });
 }

@@ -18,7 +18,7 @@ const checkUser = require('./middleware/checkUser');
 
 // CORS for Express
 app.use(cors({
-    origin: ["http://localhost:5173", "https://gemini-flow-react-git-main-muhammad-ahsans-projects-789c2ac2.vercel.app"],
+    origin: ["http://localhost:5173", "https://gemini-flow-react-git-main-muhammad-ahsans-projects-789c2ac2.vercel.app", "https://gemini-flow-react.vercel.app"],
     credentials: true,
     allowedHeaders: ['Content-Type', 'Authorization', 'x-csrf-token']
 }));
